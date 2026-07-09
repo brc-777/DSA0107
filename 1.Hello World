@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"Hello World"<<endl;
+    cout<<"Name: Bhargav"<<endl;
+    cout<<"Department: AIMl"<<endl;
+    cout<<"Year: 3rd Year";
+    return 0;
+}
