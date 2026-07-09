@@ -3,22 +3,17 @@ using namespace std;
 
 int main()
 {
-    int n,i=1;
-    long long fact=1;
+    int n, i;
+    long long fact = 1;
 
-    cin>>n;
+    cin >> n;
 
-    if(n<0)
-        cout<<"Invalid";
-    else
+    for(i = 1; i <= n; i++)
     {
-        while(i<=n)
-        {
-            fact=fact*i;
-            i++;
-        }
-        cout<<"Factorial = "<<fact;
+        fact = fact * i;
     }
+
+    cout << "Factorial = " << fact;
 
     return 0;
 }
