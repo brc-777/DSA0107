@@ -3,17 +3,25 @@ using namespace std;
 
 int main()
 {
-    int n, i;
+    int n;
     long long fact = 1;
 
+    cout << "Enter a number: ";
     cin >> n;
 
-    for(i = 1; i <= n; i++)
+    if (n < 0)
     {
-        fact = fact * i;
+        cout << "Invalid Number";
+    }
+    else
+    {
+        for (int i = 1; i <= n; i++)
+        {
+            fact = fact * i;
+        }
+
+        cout << "Factorial = " << fact;
     }
 
-    cout << "Factorial = " << fact;
-
     return 0;
-}
+}}
